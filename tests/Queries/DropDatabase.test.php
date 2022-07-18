@@ -14,7 +14,7 @@ class DropDatabaseTest extends TestCase
 
     public function makeQueryString(string $database): string
     {
-        return "DROP TABLE IF EXISTS {$database}";
+        return "DROP DATABASE IF EXISTS {$database}";
     }
 
     public function testShouldBeDropDatabaseInstanceOf(): void

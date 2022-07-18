@@ -8,6 +8,6 @@ class DropDatabase implements DropDatabaseInterface
 {
     public function getQueryString(string $database): string
     {
-        return "DROP TABLE IF EXISTS {$database}";
+        return "DROP DATABASE IF EXISTS {$database}";
     }
 }
