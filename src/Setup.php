@@ -2,7 +2,7 @@
 
 namespace PhpEasyHttp\Models\Migrations;
 
-use PDOException;
+use Exception;
 
 class Setup 
 {
@@ -20,7 +20,7 @@ class Setup
             $connection->exec($query);
             return true;
         }
-        catch (PDOException $e) {
+        catch (Exception $e) {
             $e->getMessage();
             return false;
         }
