@@ -8,11 +8,6 @@
             "PhpEasyHttp\\Models\\Migrations\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "PhpEasyHttp\\Models\\Migrations\\Tests\\": "tests/"
-        }
-    },
     "authors": [{
         "name": "jacksonsr451",
         "email": "jackson.severino.rocha@escola.pr.gov.br"

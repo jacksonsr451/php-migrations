@@ -24,7 +24,6 @@ class ComposerStaticIniteac863cd5469f1ad42432f09873c9488
         array (
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
-            'PhpEasyHttp\\Models\\Migrations\\Tests\\' => 36,
             'PhpEasyHttp\\Models\\Migrations\\' => 30,
         ),
         'D' => 
@@ -52,10 +51,6 @@ class ComposerStaticIniteac863cd5469f1ad42432f09873c9488
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
-        ),
-        'PhpEasyHttp\\Models\\Migrations\\Tests\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/tests',
         ),
         'PhpEasyHttp\\Models\\Migrations\\' => 
         array (

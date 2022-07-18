@@ -1,4 +1,7 @@
-<phpunit bootstrap="./vendor/autoload.php">
+<phpunit 
+    bootstrap="./vendor/autoload.php"
+    colors="true"
+    verbose="false">
     <testsuites>
         <testsuite name="Tests PhpEasyHttp\Models\Migrations">
             <directory suffix=".test.php">tests</directory>
