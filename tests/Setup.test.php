@@ -57,7 +57,7 @@ class SetupTest extends TestCase
         $this->assertTrue(method_exists($setup, 'execute'));
     }
 
-    public function testShouldBeSetupCreateDatabase(): void
+    public function testShouldBeSetupCreateDatabaseAndDropDatabase(): void
     {
         $database = "teste";
         Setup::init([

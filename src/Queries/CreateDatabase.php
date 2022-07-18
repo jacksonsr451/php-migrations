@@ -8,6 +8,6 @@ class CreateDatabase implements CreateDatabaseInterface
 {
     public static function getQueryString(string $database): string 
     {
-        return "CREATE IF NOT EXISTS DATABASE {$database};";
+        return "CREATE DATABASE IF NOT EXISTS {$database};";
     }
 }

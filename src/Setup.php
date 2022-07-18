@@ -17,7 +17,7 @@ class Setup
     {
         $connection = self::$configs["connection"];
         try {
-            $connection->exec($query) or die(print_r($connection->errorInfo(), true));
+            $connection->exec($query);
             return true;
         }
         catch (PDOException $e) {

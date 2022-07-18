@@ -15,7 +15,7 @@ class CreateDatabaseTest extends TestCase
 
     public function makeQueryString(string $database): string
     {
-        return "CREATE IF NOT EXISTS DATABASE {$database};";
+        return "CREATE DATABASE IF NOT EXISTS {$database};";
     }
 
     public function testShouldBeCreateDatabaseInstanceOf(): void
