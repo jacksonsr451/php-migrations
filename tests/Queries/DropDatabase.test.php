@@ -12,9 +12,28 @@ class DropDatabaseTest extends TestCase
         return new DropDatabase();
     }
 
-    public function testShouldBeDropDatabaseInstanceOf()
+    public function makeQueryString(string $database): string
+    {
+        return "DROP TABLE IF EXISTS {$database}";
+    }
+
+    public function testShouldBeDropDatabaseInstanceOf(): void
     {
         $dropDatabase = $this->makeDropDatabase();
         $this->assertInstanceOf(DropDatabase::class, $dropDatabase);
+    }
+
+    public function testDropDatabaseHasMethod(): void
+    {
+        $dropDatabase = $this->makeDropDatabase();
+        $this->assertTrue(method_exists($dropDatabase, 'getQueryString'));
+    }
+
+    public function testShouldBeGetQueryStringReturnValues(): void
+    {
+        $database = "tests";
+        $query = $this->makeQueryString($database);
+        $dropDatabase = $this->makeDropDatabase();
+        $this->assertEquals($query, $dropDatabase->getQueryString($database));
     }
 }
