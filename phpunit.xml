@@ -1,7 +1,8 @@
 <phpunit 
     bootstrap="./vendor/autoload.php"
     colors="true"
-    verbose="false">
+    verbose="false"
+    cacheResult ="false">
     <testsuites>
         <testsuite name="Tests PhpEasyHttp\Models\Migrations">
             <directory suffix=".test.php">tests</directory>

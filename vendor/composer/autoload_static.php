@@ -514,6 +514,8 @@ class ComposerStaticIniteac863cd5469f1ad42432f09873c9488
         'PharIo\\Version\\VersionConstraintParser' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintParser.php',
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
+        'PhpEasyHttp\\Models\\Migrations\\Interfaces\\CreateDatabaseInterface' => __DIR__ . '/../..' . '/src/Interfaces/CreateDatabaseInterface.php',
+        'PhpEasyHttp\\Models\\Migrations\\Queries\\CreateDatabase' => __DIR__ . '/../..' . '/src/Queries/CreateDatabase.php',
         'PhpParser\\Builder' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Builder.php',
         'PhpParser\\BuilderFactory' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/BuilderFactory.php',
         'PhpParser\\BuilderHelpers' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/BuilderHelpers.php',
