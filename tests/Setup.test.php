@@ -4,6 +4,8 @@ namespace PhpEasyHttp\Models\Migrations;
 
 use PDO;
 use PDOException;
+use PhpEasyHttp\Models\Migrations\Queries\CreateDatabase;
+use PhpEasyHttp\Models\Migrations\Queries\DropDatabase;
 use PHPUnit\Framework\TestCase;
 
 class SetupTest extends TestCase
@@ -22,9 +24,47 @@ class SetupTest extends TestCase
         }
     }
 
+    public function makeQueryCreateDatabase($database): string
+    {
+        return (new CreateDatabase())->getQueryString($database);
+    }
+
+    public function makeQueryDropDatabase($database): string
+    {
+        return (new DropDatabase())->getQueryString($database);
+    }
+
     public function testShouldBeSetupInstanceOf(): void
     {
         $setup = new Setup();
         $this->assertInstanceOf(Setup::class, $setup);
+    }
+
+    public function testShouldBeSetupHasAttrubute(): void
+    {
+        $this->assertClassHasAttribute('configs', Setup::class);
+    }
+
+    public function testShouldBeSetupHasMethodInit(): void
+    {
+        $setup = new Setup();
+        $this->assertTrue(method_exists($setup, 'init'));
+    }
+
+    public function testShouldBeSetupHasMethodExecute(): void
+    {
+        $setup = new Setup();
+        $this->assertTrue(method_exists($setup, 'execute'));
+    }
+
+    public function testShouldBeSetupCreateDatabase(): void
+    {
+        $database = "teste";
+        Setup::init([
+            'connection' => $this->makeConnection(),
+            'dbname' => $database
+        ]);
+        $this->assertTrue(Setup::execute($this->makeQueryCreateDatabase($database)));
+        $this->assertTrue(Setup::execute($this->makeQueryDropDatabase($database)));
     }
 }
