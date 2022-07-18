@@ -36,8 +36,22 @@ class MakeMigration
         }
     }
 
+    public function createFileMigrations(): bool
+    {
+        $file = str_replace('\\', '/', $this->path) . '/Migrations.php';
+        try {
+            if (! file_exists($file)) file_put_contents($file, '');
+            return true;
+        } catch (Exception $ex) {
+            $ex->getMessage();
+            return false;
+        }
+    }
+
     public function init(): void
     {
-        if ($this->createFolder()) {}
+        if ($this->createFolder()) {
+            if ($this->createFileMigrations()) {}
+        }
     }
 }

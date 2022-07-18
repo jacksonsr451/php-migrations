@@ -35,4 +35,11 @@ class MakeMigrationTest extends TestCase
         $makeMigration = new MakeMigration();
         $this->assertTrue(method_exists($makeMigration, 'init'));
     }
+
+    public function testShouldBeHasMethodCreateFileMigrationsAndCreatedFile(): void
+    {
+        $makeMigration = new MakeMigration();
+        $this->assertTrue(method_exists($makeMigration, 'createFileMigrations'));
+        $this->assertTrue($makeMigration->createFileMigrations());
+    }
 }
