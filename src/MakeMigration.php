@@ -66,8 +66,6 @@ class MakeMigration
 
     public function init(): void
     {
-        if ($this->createFolder()) {
-            if ($this->createFileMigrations()) {}
-        }
+        if ($this->createFolder()) $this->createFileMigrations();
     }
 }
