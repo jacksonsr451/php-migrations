@@ -31,6 +31,10 @@ class ComposerStaticIniteac863cd5469f1ad42432f09873c9488
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
         ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -63,6 +67,10 @@ class ComposerStaticIniteac863cd5469f1ad42432f09873c9488
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
@@ -515,7 +523,12 @@ class ComposerStaticIniteac863cd5469f1ad42432f09873c9488
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
         'PhpEasyHttp\\Models\\Migrations\\Interfaces\\CreateDatabaseInterface' => __DIR__ . '/../..' . '/src/Interfaces/CreateDatabaseInterface.php',
+        'PhpEasyHttp\\Models\\Migrations\\Interfaces\\DropDatabaseInterface' => __DIR__ . '/../..' . '/src/Interfaces/DropDatabaseInterface.php',
+        'PhpEasyHttp\\Models\\Migrations\\MakeMigration' => __DIR__ . '/../..' . '/src/MakeMigration.php',
+        'PhpEasyHttp\\Models\\Migrations\\Migration' => __DIR__ . '/../..' . '/src/Migration.php',
         'PhpEasyHttp\\Models\\Migrations\\Queries\\CreateDatabase' => __DIR__ . '/../..' . '/src/Queries/CreateDatabase.php',
+        'PhpEasyHttp\\Models\\Migrations\\Queries\\DropDatabase' => __DIR__ . '/../..' . '/src/Queries/DropDatabase.php',
+        'PhpEasyHttp\\Models\\Migrations\\Setup' => __DIR__ . '/../..' . '/src/Setup.php',
         'PhpParser\\Builder' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Builder.php',
         'PhpParser\\BuilderFactory' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/BuilderFactory.php',
         'PhpParser\\BuilderHelpers' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/BuilderHelpers.php',

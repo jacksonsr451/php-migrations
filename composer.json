@@ -3,12 +3,21 @@
     "description": "This is a simple library by make migrations with PHP",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "migrations"
+    ],
     "autoload": {
         "psr-4": {
             "App\\": "app/",
             "PhpEasyHttp\\Models\\Migrations\\": "src/"
         }
     },
+    "config": {
+        "bin-dir": "vendor/bin"
+    },
+    "bin": [
+        "migrations"
+    ],
     "authors": [{
         "name": "jacksonsr451",
         "email": "jackson.severino.rocha@escola.pr.gov.br"
