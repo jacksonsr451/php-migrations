@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-use PhpEasyHttp\Models\Migrations\MakeMigration;
+use PhpEasyHttp\Models\Migrations\Commands;
 
 if (!ini_get('date.timezone')) {
     ini_set('date.timezone', 'UTC');
@@ -44,4 +44,4 @@ unset($options);
 
 require MIGRATIONS_COMPOSER_INSTALL;
 
-(new MakeMigration())->init();
+Commands::main($_SERVER['argv']);

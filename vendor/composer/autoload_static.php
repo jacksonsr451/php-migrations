@@ -522,6 +522,7 @@ class ComposerStaticIniteac863cd5469f1ad42432f09873c9488
         'PharIo\\Version\\VersionConstraintParser' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintParser.php',
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
+        'PhpEasyHttp\\Models\\Migrations\\Commands' => __DIR__ . '/../..' . '/src/Commands.php',
         'PhpEasyHttp\\Models\\Migrations\\Interfaces\\CreateDatabaseInterface' => __DIR__ . '/../..' . '/src/Interfaces/CreateDatabaseInterface.php',
         'PhpEasyHttp\\Models\\Migrations\\Interfaces\\DropDatabaseInterface' => __DIR__ . '/../..' . '/src/Interfaces/DropDatabaseInterface.php',
         'PhpEasyHttp\\Models\\Migrations\\MakeMigration' => __DIR__ . '/../..' . '/src/MakeMigration.php',

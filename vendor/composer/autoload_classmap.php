@@ -453,6 +453,7 @@ return array(
     'PharIo\\Version\\VersionConstraintParser' => $vendorDir . '/phar-io/version/src/VersionConstraintParser.php',
     'PharIo\\Version\\VersionConstraintValue' => $vendorDir . '/phar-io/version/src/VersionConstraintValue.php',
     'PharIo\\Version\\VersionNumber' => $vendorDir . '/phar-io/version/src/VersionNumber.php',
+    'PhpEasyHttp\\Models\\Migrations\\Commands' => $baseDir . '/src/Commands.php',
     'PhpEasyHttp\\Models\\Migrations\\Interfaces\\CreateDatabaseInterface' => $baseDir . '/src/Interfaces/CreateDatabaseInterface.php',
     'PhpEasyHttp\\Models\\Migrations\\Interfaces\\DropDatabaseInterface' => $baseDir . '/src/Interfaces/DropDatabaseInterface.php',
     'PhpEasyHttp\\Models\\Migrations\\MakeMigration' => $baseDir . '/src/MakeMigration.php',
